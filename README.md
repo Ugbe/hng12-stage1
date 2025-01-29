@@ -6,8 +6,34 @@ This is the first stage (or zeroth stage 😂) task: A public API that returns t
   <li><b>The Guthub URL</b> to this repository</li>
 </ol>
 
-## API URL
+## Setup instructions for running locally
+<ol>
+  <li>Clone the repository</li>
+  <code>git clone https://github.com/Ugbe/hng12-stage1.git
+cd hng12-stage1</code>
+  <li>Install dependencies</li>
+  <code>pip install django</code>
+  <li>Run migrations</li>
+  <code>cd stageone
+python manage.py migrate</code>
+  <li>Start development server</li>
+  <code>python manage.py runserver</code>
+  <li>Navigate to the right endpoint, shown below</li>
+</ol>
+
+## API Endpoint URL
+GET /api/service
+
+### Response Format
+    {
+      "email": "ugbedeojoabba@gmail.com",
+      "current_datetime": "2023-09-08T15:30:45Z",
+      "github_url": "https://github.com/Ugbe/hng12-stage1"
+      }
 
 ### Example Usage:
-
-If you want to hire competent 
+    curl http://localhost:8000/api/service
+  or visit in your browser:
+    http://localhost:8000/api/service
+## Note:
+If you want to hire competent python backend engineers, [this](https://hng.tech/hire/python-developers) is the place to go!
