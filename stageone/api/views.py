@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from datetime import datetime, timezone
-import requests
+
 
 def service(request):
     response_data = {
