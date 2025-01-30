@@ -24,6 +24,8 @@ python manage.py migrate</code>
 ## API Endpoint URL
 GET /api/service
 
+or to test from the web: https://asery.pythonanywhere.com/api/service
+
 ### Response Format
     {
       "email": "ugbedeojoabba@gmail.com",
